@@ -1,0 +1,17 @@
+# --- MATLAB Standard ---
+*.asv              # Auto-save files
+*.mex* # Compiled MEX-files
+*.mat              # Binary data (workspace saves)
+*.slxc             # Simulink cache
+slprj/             # Simulink project folders
+*.log              # Error and execution logs
+
+# --- Documentation & Reports ---
+# Ignore temporary Word/Office files generated while editing your paper
+~$*.docx
+~*.tmp
+
+# --- System & IDE Files ---
+.DS_Store          # macOS
+Thumbs.db          # Windows
+.prj/              # MATLAB Project metadata (if applicable)
