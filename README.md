@@ -6,17 +6,17 @@ A computational study comparing the efficiency of the Newton-Raphson numerical m
 ![Field](https://img.shields.io/badge/Field-Robotics%20%26%20Mechatronics-green)
 
 ## Project Overview
-[cite_start]This repository investigates the efficiency of the **Newton-Raphson numerical method** in solving inverse kinematics (IK) problems for robotic manipulators compared to traditional analytical solutions[cite: 4, 5]. [cite_start]While analytical solutions are ideal for simple, non-redundant robots, numerical optimization offers a versatile approach for high-degree-of-freedom (DOF) systems where closed-form solutions are computationally expensive or unavailable[cite: 7, 8].
+This repository investigates the efficiency of the **Newton-Raphson numerical method** in solving inverse kinematics (IK) problems for robotic manipulators compared to traditional analytical solutions[cite: 4, 5]. [cite_start]While analytical solutions are ideal for simple, non-redundant robots, numerical optimization offers a versatile approach for high-degree-of-freedom (DOF) systems where closed-form solutions are computationally expensive or unavailable[cite: 7, 8].
 
 ## Mathematical Foundation
-[cite_start]The core of this project is the iterative refinement of joint coordinates to minimize the error between the forward kinematics and the desired pose[cite: 49, 50].
+The core of this project is the iterative refinement of joint coordinates to minimize the error between the forward kinematics and the desired pose[cite: 49, 50].
 
 ### The Update Rule
-[cite_start]The algorithm is implemented using the following update rule[cite: 79, 82]:
+The algorithm is implemented using the following update rule[cite: 79, 82]:
 $$\theta_{n+1} = \theta_{n} - J^{-1} \cdot Err$$
 
 ### The Jacobian Matrix
-[cite_start]For a 2-DOF planar manipulator, the Jacobian represents the partial derivatives of the forward kinematics with respect to the joint angles $\theta_1$ and $\theta_2$[cite: 83, 84].
+For a 2-DOF planar manipulator, the Jacobian represents the partial derivatives of the forward kinematics with respect to the joint angles $\theta_1$ and $\theta_2$[cite: 83, 84].
 
 
 
@@ -25,7 +25,7 @@ $$J = \begin{bmatrix} -l_1\sin\theta_1-l_2\sin(\theta_1+\theta_2) & -l_2\sin(\th
 ---
 
 ## Technical Specifications
-[cite_start]Based on the computational experiments conducted in this study[cite: 58, 60]:
+Based on the computational experiments conducted in this study[cite: 58, 60]:
 
 | Parameter | Value | Source File |
 | :--- | :--- | :--- |
